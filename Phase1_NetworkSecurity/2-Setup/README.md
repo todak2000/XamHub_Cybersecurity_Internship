@@ -57,3 +57,56 @@ Now, let's configure your virtual machine to simulate a network environment.
      ```
 
 ![Screenshot of Running Snort](./setup-4.png)
+
+5. **Simulate Network Monitoring**:
+   
+   - **Run Snort**: Setup a Vulnerable Machine. I researched and used [Mr Robot](https://www.vulnhub.com/entry/mr-robot-1,151/) ova file, set it up and run it.
+
+![Screenshot of Running Mr Robot VM](./setup-5.png)
+
+   - **Enable DHCP for Internal Network for Virtual Box**: This it to create a consistent way to dynamically assign IP addresses to VMs created in VirtualBox. This is important to enable a close network for and smooth simulation. So i created a new Network called `hackinglab` from the Host machine (I use a MacOS) command line
+
+    ```bash
+     VBoxManage dhcpserver add --netname hackinglab --ip 192.168.1.1 --netmask 255.255.255.0 --lowerip 192.168.56.40 --upperip 192.168.56.100 --enable
+     ```
+![Screenshot of DHCP Internal Network](./setup-6.png)
+
+From the above, a new network is created and for any VM assigned this network as an Internal Network, will get auto assigned an IP address between `192.168.56.40` - `192.168.56.100`. 
+
+![Screenshot showing Mr.Robot VM assigned to the hackinglab internal Network](./setup-7.png)
+
+By implication, upon running the Mr. Robot VM, it get auto assigned a Network address between `192.168.56.40` - `192.168.56.100`.
+
+- **Testing the Network Setup and check the Kali Machine IP Address**: 
+
+    ```bash
+     ip a
+     ```
+The above command is used to check the IP address of the Kali machine which is now `192.168.56.41`.
+
+![Screenshot Kali Machine IP address](./setup-8.png)
+
+
+- **Scan for the IP addresses on same Network as the Kali**:
+
+    ```bash
+     sudo arp-scan --interface=eth1 --localnet
+     ```
+The above command, it is required to have `arp-scan` installed. Also check that interface i used is `eth1` as shown in the above screenshot. It could be `eth0` or `eth2` as the case may be.
+
+![Screenshot of IP address Scan on same network](./setup-9.png)
+
+From the above result, I can confirm that there is another machine on this same network using `192.168.56.42`.
+
+- **Ping `192.168.56.42` to be sure**:
+
+    ```ping 192.168.56.42
+     ```
+The above command returned positive as shown below
+
+![Screenshot Result of Ping](./setup-10.png)
+
+
+- **Confirmation that `192.168.56.42` is the Mr. Robot machine**: I add the `192.168.56.42` to the browser and it loaded the VM machine. See screenshot below
+
+![Screenshot of Mr. Robot Machine access from the IP Address - 192.168.56.42](./setup-11.png)
