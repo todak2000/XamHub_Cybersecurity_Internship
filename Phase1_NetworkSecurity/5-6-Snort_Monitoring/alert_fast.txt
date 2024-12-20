@@ -1,0 +1,17 @@
+12/20-13:30:15.342039 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 192.168.192.73 -> 216.58.223.206
+12/20-13:30:15.375821 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 216.58.223.206 -> 192.168.192.73
+12/20-13:30:16.346452 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 192.168.192.73 -> 216.58.223.206
+12/20-13:30:16.366649 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 216.58.223.206 -> 192.168.192.73
+12/20-13:30:17.348655 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 192.168.192.73 -> 216.58.223.206
+12/20-13:30:17.367194 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 216.58.223.206 -> 192.168.192.73
+12/20-13:30:18.359786 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 192.168.192.73 -> 216.58.223.206
+12/20-13:30:18.393214 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 216.58.223.206 -> 192.168.192.73
+12/20-13:31:15.114025 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} 192.168.192.73 -> 192.168.192.37
+12/20-13:32:35.380901 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} :: -> ff02::16
+12/20-13:32:36.186890 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} :: -> ff02::16
+12/20-13:32:36.214439 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} :: -> ff02::1:ff82:692
+12/20-13:32:37.238999 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} fe80::a00:27ff:fe82:692 -> ff02::16
+12/20-13:32:37.423425 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} fe80::a00:27ff:fe82:692 -> ff02::2
+12/20-13:32:37.878888 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} fe80::a00:27ff:fe82:692 -> ff02::16
+12/20-13:32:41.281811 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} fe80::a00:27ff:fe82:692 -> ff02::2
+12/20-13:32:48.693733 [**] [1:1000001:1] "ICMP Packet detected" [**] [Priority: 0] {ICMP} fe80::a00:27ff:fe82:692 -> ff02::2

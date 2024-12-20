@@ -4,6 +4,8 @@
 - Introduction to Network Security Monitoring
 - Setting Up the Environment
 - Packet Capture with Wireshark
+- Introduction to Snort 
+- Monitoring and Reporting 
 
 
 ### 2: Challenges
@@ -14,5 +16,7 @@
 2. Internal Network: Allows communication between multiple VMs on the same internal network. The internal network is isolated from the host's network. Thus, traffic from the host machine (in my case my physical PC) will not be visible here as well.
 
 3. Bridged Adapter: Connects the VM directly to the same network as the host (e.g., your Wi-Fi network). The VM acts as if it is another device on the same physical network as the host. So, the VM (in this case, my kali machine) can capture traffic originating from the host machine (in my case my physical PC) (e.g., browser traffic) if the traffic passes through the shared network.
-
+4. Setting up snort was a bit challenging as i had snort version 3 installed but was using snort vwersion 2 documentation. It took me sometime to notice that especially with the change of extention to `.lua`
 ### 3: Improvements
+1. I am getting more aquinted with networks and ease in running my kali and finding my way round the file system.
+2. I am able to now identify network packages, protocols and how they work respectively
